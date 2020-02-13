@@ -48,7 +48,7 @@ class FBI():
         center = Frame(root, bg='light blue', padx=3, pady=3)
         center.grid(row=0, sticky="nsew")
 
-        strAPI = "https://api.usa.gov/crime/fbi/sapi/api/summarized/arson/states/" + self.state + "/1970/2018?API_KEY=DGYvtvfuOKwyQnd14wdANvH5QFeltbe2GR6gU1qI"
+        strAPI = "https://api.usa.gov/crime/fbi/sapi/api/summarized/arson/states/" + self.state + "/1970/2018?API_KEY=evUMwadWWaakvXMP6e4RWDtn1FHDGTEuMM01ggSw"
         response = requests.get(strAPI)
         json_data = response.json()
         crimes_json = json_data['results']

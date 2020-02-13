@@ -45,7 +45,8 @@ def GetState(stateAbbr):
 stateAbbr = GetState(stateAbbr)
             
 
-API = "https://api.usa.gov/crime/fbi/sapi/api/summarized/state/" + stateAbbr + "/arson/2000/2018?API_KEY=DGYvtvfuOKwyQnd14wdANvH5QFeltbe2GR6gU1qI"
+API = "https://api.usa.gov/crime/fbi/sapi/api/summarized/state/" + stateAbbr + "/arson/2000/2018?API_KEY=evUMwadWWaakvXMP6e4RWDtn1FHDGTEuMM01ggSw"
+
 response = requests.get(API)
 json_data = response.json()
 crimes_json = json_data['results']
